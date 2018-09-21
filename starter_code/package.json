@@ -7,6 +7,7 @@
     "dev": "DEBUG=uber-for-loundry:* nodemon ./bin/www"
   },
   "dependencies": {
+    "bcrypt": "^3.0.0",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "dotenv": "~4.0.0",
@@ -18,6 +19,6 @@
     "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.18.4"
   }
 }

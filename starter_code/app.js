@@ -8,6 +8,11 @@ const hbs          = require('hbs');
 const mongoose     = require('mongoose');
 const logger       = require('morgan');
 const path         = require('path');
+const index = require('./routes/index');
+const authRoutes = require('./routes/auth');
+const mongoose = require('mongoose');
+
+const app = express();
 
 
 mongoose.Promise = Promise;
@@ -29,6 +34,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use('/', index);
+app.use('/', authRoutes);
+
 
 // Express View engine setup
 
