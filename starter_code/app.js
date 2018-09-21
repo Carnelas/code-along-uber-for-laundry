@@ -10,10 +10,6 @@ const logger       = require('morgan');
 const path         = require('path');
 const index = require('./routes/index');
 const authRoutes = require('./routes/auth');
-const mongoose = require('mongoose');
-
-const app = express();
-
 
 mongoose.Promise = Promise;
 mongoose
@@ -59,7 +55,6 @@ app.locals.title = 'Express - Generated with IronGenerator';
 
 
 
-const index = require('./routes/index');
 app.use('/', index);
 
 
