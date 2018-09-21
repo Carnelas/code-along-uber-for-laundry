@@ -75,7 +75,7 @@ app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 
 // default value for title local
-app.locals.title = 'Bienvenido a Uber-Laundry';
+app.locals.title = 'Welcome to Uber-Laundry';
 
 
 
